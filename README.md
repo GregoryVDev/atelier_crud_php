@@ -55,21 +55,21 @@ Suppression d'un utilisateur
 
 Modification d'un utilisateur
 
-- [ ] Récupérer les données de l'utilisateur
-- [ ] Dans `index.php`, créer un lien vers une nouvelle page, `update.php`, dans la table HTML, à côté du lien qui dirige vers la fiche d'un utilisateur. Ajouter l'`id` de l'utilisateur dans ce lien en chaîne de requête (`?id=`).
-- [ ] Créer la nouvelle page `update.php`. Récupérer l'id dans l'url via la superglobale `GET`.
-- [ ] S'il n'y a pas d'`id` dans l'url, rediriger vers la page `index.php` (`header('Location: index.php');`).
-- [ ] Copier le HTML de la page `create.php` et le coller en bas de la page `update.php`.
-- [ ] Créer une requête SQL pour récupérer les données de l'utilisateur dont l'id correspond à celle de l'url.
-- [ ] Préparer et exécuter la requête.
-- [ ] Utiliser les données récupérées pour les ajouter dans les propriétés `value` du formulaire (`value="<?= $user["first_name"] ?>"`) afin de remplir le formulaire avec les données déjà existantes.
-- [ ] Ajouter un champ de formulaire caché contenant l'`id` issue de la requête de vérification de l'utilisateur. Cela permettra de cibler le bon utilisateur lors de l'envoi des données.
-- [ ] Envoi du formulaire
-- [ ] Vérifier la présence de la superglobale `POST`.
-- [ ] Vérifier que les données transmises via le formulaire sont présentes et ne sont pas vides.
-- [ ] Créer une requête SQL permettant de modifier l'utilisateur là où l'`id` correspond dans la base de données.
-- [ ] Préparer et exécuter la requête.
-- [ ] Vérifier la modification de l'utilisateur dans la page `index.php` et/ou en base de données.
+- [x] Récupérer les données de l'utilisateur
+- [x] Dans `index.php`, créer un lien vers une nouvelle page, `update.php`, dans la table HTML, à côté du lien qui dirige vers la fiche d'un utilisateur. Ajouter l'`id` de l'utilisateur dans ce lien en chaîne de requête (`?id=`).
+- [x] Créer la nouvelle page `update.php`. Récupérer l'id dans l'url via la superglobale `GET`.
+- [x] S'il n'y a pas d'`id` dans l'url, rediriger vers la page `index.php` (`header('Location: index.php');`).
+- [x] Copier le HTML de la page `create.php` et le coller en bas de la page `update.php`.
+- [x] Créer une requête SQL pour récupérer les données de l'utilisateur dont l'id correspond à celle de l'url.
+- [x] Préparer et exécuter la requête.
+- [x] Utiliser les données récupérées pour les ajouter dans les propriétés `value` du formulaire (`value="<?= $user["first_name"] ?>"`) afin de remplir le formulaire avec les données déjà existantes.
+- [x] Ajouter un champ de formulaire caché contenant l'`id` issue de la requête de vérification de l'utilisateur. Cela permettra de cibler le bon utilisateur lors de l'envoi des données.
+- [x] Envoi du formulaire
+- [x] Vérifier la présence de la superglobale `POST`.
+- [x] Vérifier que les données transmises via le formulaire sont présentes et ne sont pas vides.
+- [x] Créer une requête SQL permettant de modifier l'utilisateur là où l'`id` correspond dans la base de données.
+- [x] Préparer et exécuter la requête.
+- [x] Vérifier la modification de l'utilisateur dans la page `index.php` et/ou en base de données.
 
 Exemple de gestion de messages d'erreur et de confirmation à l'aide de sessions :
 

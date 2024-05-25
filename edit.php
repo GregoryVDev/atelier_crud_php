@@ -34,6 +34,8 @@ if ($_POST) {
 
         require_once("close.php");
 
+        $_SESSION["name_edited"] = $last_name . " " . $first_name; // $last_name et $first_name c'est les nouvelles valeurs du nom de l'user
+
         header("Location: index.php");
     }
 }
@@ -53,6 +55,9 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
     $result = $query->fetch();
 
     require_once("close.php");
+
+    $_SESSION['update_confirm'] = "valid";
+    $_SESSION['name_user'] = $result[1] . " " . $result[2];
 } else {
     header("Location: index.php");
 }

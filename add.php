@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 if ($_POST) {
 
     if (
@@ -30,6 +32,11 @@ if ($_POST) {
         $query->execute();
 
         require_once("close.php");
+
+
+        $_SESSION['name_confirm'] = "confirm";
+        $_SESSION['name_add'] = $last_name . " " . $first_name;
+
 
         header("Location: index.php");
         exit();
