@@ -54,7 +54,7 @@ $result = $query->fetchAll(pdo::FETCH_ASSOC);
                     <td><?= $user['address'] ?></td>
                     <td><?= $user['city'] ?></td>
                     <td>
-                        <a href="#">Edit</a>
+                        <a href="edit.php?id=<?= $user["id"] ?>">Edit</a>
                         <a href="details.php?id=<?= $user["id"] ?>">Profil</a>
                         <a href="delete.php?id=<?= $user["id"] ?>">Delete</a>
 
