@@ -21,7 +21,7 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
     $sql = "DELETE FROM users WHERE id=:id";
     $query = $db->prepare($sql);
 
-    $query->bindValue(":id", $id,);
+    $query->bindValue(":id", $id);
     $query->execute();
 
     require_once("close.php");
