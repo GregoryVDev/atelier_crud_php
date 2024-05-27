@@ -37,6 +37,7 @@ Affichage d'une page par utilisateur :
 - [x] Dans `index.php`, créer un lien vers une nouvelle page, `user.php`, dans la colonne `actions` via un nouvel élément <td>. Ajouter l'id de l'utilisateur dans ce lien en chaîne de requête (`?id=`).
 - [x] Créer la page `user.php`. Utiliser la superglobale `GET` qui pour récupérer la valeur de l'`id` dans l'url (`$_GET['id']`).
 - [x] S'il n'y a pas d'`id` dans l'url, rediriger vers la page `index.php` (`header('Location: index.php');`).
+- [x] On vérifie que l'utilisateur demandé existe en base de donnée
 - [x] Nettoyer l'`id` avec `strip_tags()` pour retirer les potentiels caractères spéciaux placés par erreur ou de façon malintentionnée.
 - [x] Dans `user.php`, créer une requête SQL permettant d'afficher l'utilisateur pour lequel l'`id` correspond à celle présente dans l'url.
 - [x] Préparer et exécuter la requête.
