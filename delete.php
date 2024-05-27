@@ -34,7 +34,7 @@ if (isset($_GET["id"]) && !empty($_GET["id"])) {
 
     // Cette ligne stock l'identifiant $id dans la variable de session "bonbon_delete_id"
     $_SESSION['user_delete_id'] = $id;
-    $_SESSION['user_name'] = $result[1];
+    $_SESSION['user_name'] = $result[1] . " " . $result[2];
 } else {
     header("Location: index.php");
 }

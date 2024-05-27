@@ -73,7 +73,7 @@ if ($_POST) {
 
             <label for="city">City</label>
             <input type="text" name="city" required>
-            <input type="submit" value="send"></input>
+            <input type="submit" value="SEND"></input>
         </div>
     </form>
     <a href="index.php">Back</a>
