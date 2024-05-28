@@ -13,7 +13,7 @@ if (
     $sql = 'SELECT * FROM users WHERE id=:id';
     $query = $db->prepare($sql);
 
-    $query->bindValue(':id', $id,);
+    $query->bindValue(':id', $id);
 
     $query->execute();
 
